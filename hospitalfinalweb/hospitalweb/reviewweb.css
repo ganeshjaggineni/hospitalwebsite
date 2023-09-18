@@ -1,0 +1,60 @@
+#loading{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#fff url("codeimages/scared.gif") no-repeat center;
+    z-index:9999;
+}
+#loading h2{
+    position:relative;
+    top:50;
+    left:50;
+    color:rgb(238, 10, 10);
+    font-size:50px;
+    text-align:center;
+}
+
+.review .heading{
+    color:blue;
+    font-size:30px;
+    text-align: center;
+    border-style:ridge;
+}
+.review .reviewboxcontainer{
+    display:flex;
+    text-align:left;
+    background:rgb(130, 123, 222);
+}
+
+.review .reviewboxcontainer .reviewbox .reviewstars{
+ color:gold;
+ animation:move 5s linear infinite;
+}
+
+.review .reviewboxcontainer .reviewbox h3{
+    color:rgb(225, 47, 163);
+    font-size:30px;
+    padding:15px;
+}
+.review .reviewboxcontainer .reviewbox .text
+{
+    color:rgb(45, 25, 25);
+    line-height:1.8rem;
+    font-size:15px;
+    padding-top:15px;
+}
+
+@keyframes move{
+    0%{
+        transform:rotate(180deg);
+    }
+    30%{
+        color:rgb(22, 17, 11);
+    }
+    70%{
+        color:rgb(120, 193, 12);
+    }
+    80%{
+        color:aquamarine;
+    }
+}

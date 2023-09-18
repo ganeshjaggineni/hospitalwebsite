@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+#loading{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#fff url("codeimages/scared.gif") no-repeat center;
+    z-index:9999;
+}
+#loading h2{
+    position:relative;
+    top:50;
+    left:50;
+    color:rgb(238, 10, 10);
+    font-size:50px;
+    text-align:center;
+}
+html{
+    font-size:102.5%;
+}
+.header{
+    padding:2rem 9%;
+    position:static;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,0.1);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo{
+    font-size:2.5rem;
+    color:rgb(40, 175, 216);
+}
+.material-symbols-outlined
+{
+    color:pink;
+}
+.header .navbar a{
+    font-size:2rem;
+    color:green;
+    margin-left:1rem;
+    font-family:'Sevillana', cursive;
+}
+.header .navbar a:hover{
+color:orange;
+background-color:blue;
+}
+.menubtn{
+    font-size:2.5rem;
+    border-radius:1rem;
+    color:chartreuse;
+    padding :0.3rem;
+    cursor:pointer;
+    /* display:none; */
+}
+
+.facility
+{
+    display:flex;
+    padding:30px;
+    justify-content: space-between;
+    border:2px;
+    border-style:groove;
+    border-color:greenyellow;
+}
+.facility .facilityboxcontainer
+{
+    background-color: blue;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.special{
+    display:flex;
+    gap:2rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    justify-content:space-between;
+    border: 2px solid orange;
+}
+.special .specialicons{
+    border:2px solid rgb(0, 87, 128);
+    text-align:center;
+    padding:2.5rem;
+    box-shadow:3px;
+}
+
+.special .specialicons i{
+    font-size:4.5rem;
+    color:rgb(112, 156, 47);
+    /* box-shadow:1rem 1rem 0 rgb(84, 102, 98); */
+}
+
+.special .specialicons h3{
+    font-size:28px;
+    color:rgb(206, 39, 117);
+    padding:9px;
+}
+
+.special .specialicons p{
+    font-size:30px;
+    font-weight:15px;
+}
+.service .serviceboxcontainer
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+    border:2px groove palevioletred;
+}
+
+.service .serviceboxcontainer .servicebox
+{
+    background: #fff;
+    border-radius:1rem;
+    border:3px solid  rgb(0, 87, 128);
+    margin:30px;
+}
+.serviceheading
+{
+    text-align:center;
+    padding-bottom:12px;
+    padding-top:12px;
+    letter-spacing: 7px;
+}
+
+.service .serviceboxcontainer .servicebox i{
+    font-size:150px;
+    color:rgb(202, 27, 158);
+}
+
+.service .serviceboxcontainer .servicebox h3{
+    margin:30px;
+    text-align:center;
+}
+.service .serviceboxcontainer .servicebox p{
+    margin:30px;
+    text-align:center;
+}
+
+.about .doctors{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:30px;
+    border:2px solid blue;
+}
+
+.about .doctors .aboutimg
+{
+   border:3px solid greenyellow;
+   position:relative;
+   left:40%;
+   margin-top:20px;
+}
+
+.about .doctors .aboutcontent p{
+    font-size:17px;
+    text-align:justify;
+    animation :change 3s linear infinite;
+    margin-bottom:20px;
+    margin-left:3px;
+    margin-right:3px;
+    margin-top:30px;
+}
+
+@keyframes change{
+    0%{
+        color:green;
+    }
+    10%{
+        color:rgb(128, 36, 0);
+    }
+    20%{
+        color:rgb(36, 0, 128);
+    }
+    30%{
+        color:rgb(0, 111, 128);
+    }
+    40%{
+        color:rgb(201, 105, 199);
+    }
+    50%{
+        color:rgb(241, 211, 40);
+    }
+    60%{
+        color:rgb(216, 117, 148);
+    }
+    70%{
+        color:rgb(182, 248, 103);
+    }
+    80%{
+        color:rgb(99, 99, 232);
+    }
+    90%{
+        color:rgb(149, 113, 177);
+    }
+    100%{
+        color:rgb(91, 17, 58);
+    }
+}
+
+
+.profdoctors .profdoctorsboxcontainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-top:30px;
+    border:2px double brown;
+    outline:2px solid green;
+    border-inline: 3px dashed rgb(6, 119, 106);
+    border-radius:5px;
+    text-align: center;
+}
+
+.profdoctors .profdoctorsboxcontainer .profbox{
+    background:#fff;
+    border:2px solid rgb(60, 84, 239);
+    border-radius:10px;
+    /* padding:2rem; */
+}
+
+.profdoctors .profdoctorsboxcontainer .profbox img{
+    height:20rem;
+    margin-top:15px;
+}
+
+.profdoctors .profdoctorsboxcontainer .profbox h3{
+    color:rgb(20, 190, 216);
+    font-size:30px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+.profdoctors .profdoctorsboxcontainer .profbox span{
+    color:rgb(249, 89, 153);
+    font-size:20px;
+}
+.profdoctors .profdoctorsboxcontainer .profbox .share{
+    padding-top:12px;
+}
+
+.profdoctors .profdoctorsboxcontainer .profbox .share a{
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:25px;
+    border:1px solid rgb(3, 73, 16);
+    border-radius:9px;
+    margin-top:7px;
+}
+
+
+.profdoctors .profdoctorsboxcontainer .profbox .share a:hover{
+    background-color: deeppink;
+    color:greenyellow;
+}
+.footer .footercont{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap:2rem;
+    background-color: rgb(195, 207, 195);
+}
+
+.footer .footercont .footbox h3{
+    font-size:2.5rem;
+    color:rgb(26, 91, 203);
+    padding:1rem 0;
+}
+
+.footer .footercont .footbox a
+{
+    display:block;
+    font-size:1.rem;
+    color:rgb(248, 113, 160);
+    padding:1rem 0;
+}
+
+.footer .footercont .footbox a:hover{
+    padding-right:2rem;
+    color:rgb(14, 43, 161);
+}
+
+.footer .credit{
+    padding:1rem;
+    padding-top:2rem;
+    margin-top:2rem;
+    text-align:center;
+    font-size:2rem;
+    color:rgb(245, 129, 12);
+    border-top:0.1rem solid rgba(0,0,0,0.1);
+}
+
+.footer .credit span{
+    color:rgb(244, 15, 45);
+    font-family:'Sevillana', cursive;
+}
+.map h2{
+    font-size:20px;
+    color:rgb(27, 235, 197);
+    text-align:center;
+    margin:30px;
+}
+
+

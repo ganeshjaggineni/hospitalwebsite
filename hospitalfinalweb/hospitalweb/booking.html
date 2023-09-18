@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>BOOKING</title>
+        <link rel="stylesheet" href="bookingweb.css">
+    </head>
+    <body onload="scaredloader()">
+        <div id="loading">
+            <h2>loading ....</h2>
+        </div>
+        <!-- booking section starts  -->
+        <section class="booking" id="booking1">
+            <h2 class="bookingheading">register <span>now</span> </h2>
+                <div class="bookingrow">
+                    <div class="image">
+                        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ighbadce.json"
+                            trigger="loop"
+                            colors="primary:#4030e8,secondary:#e83a30"
+                            stroke="60"
+                            style="width:250px;height:250px">
+                        </lord-icon>
+
+                        <img src="codeimages/bed.gif" alt="reserve now">
+                        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/mypzgycw.json"
+                            trigger="loop"
+                            colors="primary:#e8b730,secondary:#e8308c"
+                            style="width:250px;height:250px">
+                        </lord-icon>
+                    </div>
+
+                    <form action="">
+                        <input type="text" placeholder="your beautiful name please" class="box">
+                        <input type="number" placeholder="your number" class="box">
+                        <input type="email" placeholder="your email" class="box">
+                        <input type="date" class="box">
+                        <input type="submit"  value="register now" class="btn" onclick="alert('x');">
+                    </form>
+
+                    <iframe class="iframevideo" width="768" height="432" src="https://www.youtube.com/embed/G07V0aOmWTI" title="Making an Appointment - Speaking English Conversation (with exercise)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+        </section>
+        <!-- booking section ends  -->
+        <script>
+            let preloader=document.getElementById("loading");
+            function scaredloader()
+            {
+               preloader.style.display='none';
+            }
+        </script>
+    </body>
+</html>
